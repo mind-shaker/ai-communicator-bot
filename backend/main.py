@@ -6,7 +6,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["ai-communicator-bot.vercel.app"],  # 👈 можеш вказати конкретну адресу замість "*"
+    allow_origins=["https://ai-communicator-bot.vercel.app"],  # 👈 можеш вказати конкретну адресу замість "*"
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
