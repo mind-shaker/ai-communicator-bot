@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": "Привіт! FastAPI працює 🎉"}
+    return {"message": "Привіт! FastAPI працює&&& 🎉"}
 
 class NameRequest(BaseModel):
     name: str
