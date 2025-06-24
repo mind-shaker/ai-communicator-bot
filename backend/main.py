@@ -10,6 +10,10 @@ def read_root():
 class NameRequest(BaseModel):
     name: str
 
+
+
+
 @app.post("/create-message/")
-def create_message(data: NameRequest):
+async def create_message(data: NameRequest):
+    print(f"Отримано ім’я: {data.name}")  # <--- тут бачиш запит у логах
     return {"message": f"{data.name} створив новий код"}
