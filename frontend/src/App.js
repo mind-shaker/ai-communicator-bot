@@ -29,7 +29,7 @@ function App() {
           placeholder="Введи ім'я"
           required
         />
-        <button type="submit">Відправити</button>
+        <button type="submit">Від_правити</button>
       </form>
       {response && <p>Відповідь: {response}</p>}
     </div>
