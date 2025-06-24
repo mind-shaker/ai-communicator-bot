@@ -8,7 +8,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("https://твій-бекенд.onrender.com/create-message/", {
+    const res = await fetch("https://ai-communicator-bot.onrender.com/create-message/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name }),
